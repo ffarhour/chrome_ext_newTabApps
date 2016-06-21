@@ -1,0 +1,21 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "New Tab App Launcher",
+  "version": "0.1",
+
+  // Recommended
+  "description": "When a new tab is created redirects it to the Apps page (chrome://apps/)",
+
+  // Optional
+  "author": "Farmehr Farhour f.farhour@gmail.com",
+
+  "permissions": [
+    "tabs"
+],
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+    }
+}
