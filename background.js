@@ -27,3 +27,11 @@ chrome.tabs.onCreated.addListener(function(tab) {
     //pass the tab id of the new tab to the checkUpdate function
     checkUpdate(tab.id);
 });
+
+//function to create a new tab directed to apps page
+function createAppsTab(){
+    chrome.tabs.create({url:"chrome://apps/"});
+}
+//when icon pressed, direct to apps page
+chrome.browserAction.onClicked.addListener(createAppsTab);
+createAppsTab();
