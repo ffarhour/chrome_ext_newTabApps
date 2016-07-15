@@ -34,4 +34,3 @@ function createAppsTab(){
 }
 //when icon pressed, direct to apps page
 chrome.browserAction.onClicked.addListener(createAppsTab);
-createAppsTab();
