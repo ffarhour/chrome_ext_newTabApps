@@ -7,7 +7,7 @@ function checkUpdate(tabID){
         //if completed loaded, checks if it is a new tab and updates it with a new url
         if (changeInfo.status == "complete") {
             //alert(tab.url);
-            if(tab.url=="chrome://newtab/"){
+            if(tab.url=="chrome://newtab/" || tab.url=="about:blank"){
                 chrome.tabs.update(tabID,{url:"chrome://apps/"});
             };
             //log to console
