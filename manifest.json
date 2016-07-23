@@ -1,13 +1,10 @@
 {
-    // Required
     "manifest_version": 2,
     "name": "New Tab App Launcher",
-    "version": "0.4",
+    "version": "0.0.0.1",
 
-    // Recommended
     "description": "When a new tab is created redirects it to the Apps page (chrome://apps/)",
 
-    // Optional
     "author": "Farmehr Farhour f.farhour@gmail.com",
 
     "permissions": [
@@ -22,5 +19,9 @@
     "browser_action": {
         "default_icon": "icon2.png",
         "default_title": "Redirect new tab to App Launcher"
-    }
+    },
+
+    "icons": { "16": "icon2.png",
+           "48": "icon2.png",
+          "128": "icon2.png" }
 }
